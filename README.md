@@ -1,7 +1,20 @@
-# What is this repository for?
+# This branch contains a solution for the "Project management app" assignment
 
-The repository contains my solutions for the React.js course by the Rolling Scopes School.
+## Technical requirements
+- Node.js 18
+- Docker
 
-You may switch branches to see a solution for a corresponding task.
+## Installing required dependencies
+- Execute the following command:
+  ```
+  npm install
+  ```
 
-The link to the course: https://github.com/rolling-scopes-school/tasks/tree/master/react
+## Running the application
+- Clone a repository https://github.com/vitaly-sazonov/kanban-rest and follow instructions in the repository 
+  to run a backend app
+- Add a .env file with the environment variables listed in the .env.example file
+- Enter the following command:
+    ```
+    npm start
+    ```

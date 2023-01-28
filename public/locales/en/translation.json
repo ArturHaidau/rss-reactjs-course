@@ -1,0 +1,92 @@
+{
+  "common": {
+    "home": "Home",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signUp": "Sign up",
+    "boards": "Boards",
+    "board": "Board",
+    "profile": "Profile",
+    "addBoard": "Add board",
+    "addTask": "Add task",
+    "addColumn": "Add column",
+    "login": "Login",
+    "password": "Password",
+    "name": "Name",
+    "edit": "Edit",
+    "delete": "Delete",
+    "submit": "Submit",
+    "close": "Close",
+    "description": "Description",
+    "title": "Title",
+    "error": "Something went wrong... Sorry :(",
+    "noColumns": "You have no any columns",
+    "developedBy": "Developed by Artur Haidau",
+    "pageNotFound": "Page not found"
+  },
+  "home": {
+    "title": "Are you looking for a convenient application that will be convenient to manage the process of setting and completing tasks?",
+    "presentation": "I am glad to present to your attention my application PMA. With it, you can easily manage your project, be aware of all the tasks and control the progress of their implementation.",
+    "capabilities": {
+      "first": "Simple and intuitive interface",
+      "second": "Personal fully editable list of projects",
+      "third": "Ability to create an unlimited number of task stages and tasks themselves",
+      "fourth": "Ability to add/edit/delete tasks, assign a team of performers and responsible",
+      "fifth": "Instant change of statuses of tasks and projects for the convenience of interaction between the team of performers",
+      "sixth": "Convenient search among the list of all your projects"
+    },
+    "developedWith": "This application is developed using the following technologies:",
+    "rsSchool": "RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of our school are front-end and javascript developers from different companies and countries."
+  },
+  "validation": {
+    "auth": {
+      "name": {
+        "required": "Name is required",
+        "minLength": "Name should have length at least 3"
+      },
+      "login": {
+        "required": "Login is required",
+        "minLength": "Login should have length at least 3"
+      },
+      "password": {
+        "required": "Password is required",
+        "minLength": "Password should have length at least 5"
+      }
+    },
+    "boardPreview": {
+      "title": {
+        "required": "Title is required"
+      },
+      "description": {
+        "required": "Description is required"
+      }
+    },
+    "column": {
+      "title": {
+        "required": "Title is required",
+        "maxLength": "Title must be no more than 20 symbols"
+      }
+    },
+    "task": {
+      "title": {
+        "required": "Title is required"
+      },
+      "description": {
+        "required": "Description is required"
+      }
+    }
+  },
+  "modals": {
+    "delete": {
+      "board": "Do you really want to delete board?",
+      "task": "Do you really want to delete task?",
+      "column": "Do you really want to delete column?",
+      "user": "Do you really want to delete account?"
+    },
+    "edit": {
+      "board": "Edit board",
+      "task": "Edit task",
+      "user": "Edit account"
+    }
+  }
+}

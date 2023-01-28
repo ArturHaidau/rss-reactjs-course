@@ -1,7 +1,22 @@
-# What is this repository for?
+# This branch contains a solution for the "React.Forms" assignment
 
-The repository contains my solutions for the React.js course by the Rolling Scopes School.
+## Technical requirements
+- Node.js 18
 
-You may switch branches to see a solution for a corresponding task.
+## Installing required dependencies
+- Execute the following command:
+  ```
+  npm install
+  ```
 
-The link to the course: https://github.com/rolling-scopes-school/tasks/tree/master/react
+## Running the application
+- Enter the following command:
+    ```
+    npm start
+    ```
+
+## Running application tests
+- Execute the following command in the console from the root folder of the application:
+  ```
+  npm run test
+  ```

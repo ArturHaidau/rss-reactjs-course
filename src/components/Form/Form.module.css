@@ -1,0 +1,36 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.field {
+    padding-bottom: 1rem;
+}
+
+.formContainer {
+    width: 20%;
+    background-color: lightgray;
+}
+
+.form {
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+.submitButton {
+    padding-top: 1rem;
+}
+
+.cards {
+    padding-top: 2rem;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}

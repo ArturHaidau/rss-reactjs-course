@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: gray;
+}
+
+.linkContainer {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.linkActive {
+    background-color: black;
+}
+
+.linkLabel {
+    color: white;
+    font-weight: bold;
+}

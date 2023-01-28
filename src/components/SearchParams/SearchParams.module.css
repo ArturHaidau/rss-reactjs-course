@@ -1,0 +1,44 @@
+.container {
+    height: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgray;
+    border-radius: 1em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.fieldsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+
+.sortByContainer {
+    width: 40%;
+}
+
+.pageLimitContainer {
+    width: 30%;
+}
+
+.field {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.pageLimitInput {
+    width: 20%
+}
+
+.pagesCount {
+    font-weight: bold;
+    margin-left: 1em;
+}

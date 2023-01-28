@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John Doe",
+    "position": "Architect & Engineer",
+    "email": "john@mail.com"
+  },
+  {
+    "name": "Artur Haidau",
+    "position": "Engineer",
+    "email": "ahaidau@mail.com"
+  },
+  {
+    "name": "Dan Abramov",
+    "position": "Architect",
+    "email": "dabramov@mail.com"
+  },
+  {
+    "name": "Ilya Klimov",
+    "position": "Engineer",
+    "email": "iklimov@mail.com"
+  },
+  {
+    "name": "Timur Shemsedinov",
+    "position": "Architect",
+    "email": "tshemsedinov@mail.com"
+  }
+]

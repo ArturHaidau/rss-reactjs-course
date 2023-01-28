@@ -1,0 +1,10 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}

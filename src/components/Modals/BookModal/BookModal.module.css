@@ -1,0 +1,12 @@
+.field {
+    margin-bottom: 0.5em;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.value {
+    font-style: italic;
+}

@@ -1,0 +1,27 @@
+.field {
+    margin-bottom: 0.5em;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.value {
+    font-style: italic;
+}
+
+.backContainer {
+    margin-bottom: 1em;
+}
+
+.back {
+    font-weight: bold;
+    font-size: large;
+    color: blue;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: red;
+}

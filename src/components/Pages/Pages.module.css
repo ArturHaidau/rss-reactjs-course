@@ -1,0 +1,29 @@
+.container {
+    padding-bottom: 2em;
+}
+
+.pages {
+    width: 40%;
+    min-width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+    border-radius: 1em;
+    background-color: blueviolet;
+    color: white;
+}
+
+.page:hover {
+    cursor: pointer;
+}
+
+.page.active {
+    background-color: red;
+}

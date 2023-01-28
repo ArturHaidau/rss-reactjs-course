@@ -1,0 +1,39 @@
+.toast {
+    padding: 20px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.header {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.toast.success {
+    background-color: #04AA6D;
+}
+
+.toast.error {
+    background-color: #f44336;
+}
+
+.toast.info {
+    background-color: #209cff;
+}
+
+.closeButton {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closeButton:hover {
+    color: black;
+}

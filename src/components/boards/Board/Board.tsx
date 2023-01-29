@@ -11,13 +11,11 @@ interface Props {
   data: BoardType;
 }
 
-type Modals = {
-  addColumn: boolean;
-};
+type Modal = 'addColumn';
 
 const Board = ({ data }: Props) => {
   const { t } = useTranslation();
-  const { modals, showModal, hideModal } = useModals<Modals>({ addColumn: false });
+  const { modals, showModal, hideModal } = useModals<Modal>({ addColumn: false });
   return (
     <>
       <Box sx={styles.container}>

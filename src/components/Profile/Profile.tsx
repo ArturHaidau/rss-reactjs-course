@@ -12,17 +12,14 @@ import DeleteModal from '../modals/DeleteModal';
 import UserModal from '../modals/UserModal';
 import styles from './styles';
 
-type Modals = {
-  editUser: boolean;
-  deleteUser: boolean;
-};
+type Modal = 'editUser' | 'deleteUser';
 
 const Profile = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const { getUserId } = useJWT();
   const { data } = usersApi.useGetByIdQuery(getUserId());
-  const { modals, hideModal, showModal } = useModals<Modals>({
+  const { modals, hideModal, showModal } = useModals<Modal>({
     deleteUser: false,
     editUser: false,
   });

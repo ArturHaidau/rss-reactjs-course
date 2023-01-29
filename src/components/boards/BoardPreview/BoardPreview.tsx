@@ -13,22 +13,19 @@ interface Props {
   boardPreview: BoardPreviewType;
 }
 
-type Modals = {
-  editBoard: boolean;
-  deleteBoard: boolean;
-};
+type Modal = 'editBoard' | 'deleteBoard';
 
 const BoardPreview = ({ boardPreview }: Props) => {
   const { t } = useTranslation();
   const { updateBoard, deleteBoardById } = useBoards();
-  const { modals, hideModal, showModal } = useModals<Modals>({
+  const { modals, hideModal, showModal } = useModals<Modal>({
     editBoard: false,
     deleteBoard: false,
   });
   const navigate = useNavigate();
   const { title, description } = boardPreview;
 
-  const handleClick = (name: keyof Modals) => (event: SyntheticEvent) => {
+  const handleClick = (name: Modal) => (event: SyntheticEvent) => {
     event.stopPropagation();
     showModal(name);
   };

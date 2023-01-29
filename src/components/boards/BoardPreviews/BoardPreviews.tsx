@@ -8,13 +8,11 @@ import BoardModal from '../../modals/BoardModal';
 import BoardPreview from '../BoardPreview';
 import styles from './styles';
 
-type Modals = {
-  addBoard: boolean;
-};
+type Modal = 'addBoard';
 
 const BoardPreviews = () => {
   const { t } = useTranslation();
-  const { modals, hideModal, showModal } = useModals<Modals>({ addBoard: false });
+  const { modals, hideModal, showModal } = useModals<Modal>({ addBoard: false });
   const { createBoard } = useBoards();
   const { data: boardPreviews = [] } = boardsApi.useGetAllQuery();
   return (

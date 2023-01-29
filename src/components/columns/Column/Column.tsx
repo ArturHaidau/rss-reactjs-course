@@ -20,17 +20,14 @@ interface Props {
   boardId: string;
 }
 
-type Modals = {
-  deleteColumn: boolean;
-  addTask: boolean;
-};
+type Modal = 'deleteColumn' | 'addTask';
 
 const Column = ({ data, boardId }: Props) => {
   const { t } = useTranslation();
   const [isColumnEdited, setIsColumnEdited] = useState(false);
   const { deleteColumnById, updateColumn } = useColumns(boardId);
   const { updateTask, createTask } = useTasks(boardId, data.id);
-  const { modals, showModal, hideModal } = useModals<Modals>({
+  const { modals, showModal, hideModal } = useModals<Modal>({
     addTask: false,
     deleteColumn: false,
   });

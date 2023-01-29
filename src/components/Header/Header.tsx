@@ -32,9 +32,7 @@ const Button = ({ label, handleClick, icon }: ButtonProps) => (
   </MUIButton>
 );
 
-type Modals = {
-  addBoard: boolean;
-};
+type Modal = 'addBoard';
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -43,7 +41,7 @@ const Header = () => {
   const { isAuth } = useSelector(selectAuth);
   const { signOut } = useAuth();
   const navigate = useNavigate();
-  const { modals, hideModal, showModal } = useModals<Modals>({ addBoard: false });
+  const { modals, hideModal, showModal } = useModals<Modal>({ addBoard: false });
 
   const Language = (
     <Menu<string>

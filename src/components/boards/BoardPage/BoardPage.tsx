@@ -11,15 +11,11 @@ import DeleteModal from '../../modals/DeleteModal';
 import Board from '../Board';
 import styles from './styles';
 
-type Modals = {
-  boardDescription: boolean;
-  editBoard: boolean;
-  deleteBoard: boolean;
-};
+type Modal = 'boardDescription' | 'editBoard' | 'deleteBoard';
 
 const BoardPage = () => {
   const { t } = useTranslation();
-  const { modals, hideModal, showModal } = useModals<Modals>({
+  const { modals, hideModal, showModal } = useModals<Modal>({
     boardDescription: false,
     editBoard: false,
     deleteBoard: false,

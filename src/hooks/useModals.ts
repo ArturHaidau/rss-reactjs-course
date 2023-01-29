@@ -1,17 +1,17 @@
 import { useState } from 'react';
 
-type Modals = {
-  [name: string]: boolean;
+type Modals<T extends string> = {
+  [key in T]: boolean;
 };
 
-const useModals = <T extends Modals>(initialState: T) => {
-  const [state, setState] = useState<T>(initialState);
+const useModals = <T extends string>(initialState: Modals<T>) => {
+  const [state, setState] = useState(initialState);
 
-  const showModal = (name: keyof T) => {
+  const showModal = (name: T) => {
     setState((prev) => ({ ...prev, [name]: true }));
   };
 
-  const hideModal = (name: keyof T) => {
+  const hideModal = (name: T) => {
     setState((prev) => ({ ...prev, [name]: false }));
   };
 
